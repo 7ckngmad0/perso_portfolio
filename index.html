@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JugraM Portfolio</title>
+  <meta name="description" content="JugraM — BSIT Data Analytics student at PUP. Flask web apps, dashboards and data cleaning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#top">JugraM<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-text reveal">
+        <p class="pill"><span class="dot"></span> Open to freelance work &amp; internships</p>
+        <h1>I turn messy data into <span class="hl">clear answers.</span></h1>
+        <p class="sub">BSIT student at the Polytechnic University of the Philippines, specializing in Data Analytics. I build Flask web apps, dashboards and small tools, and I clean up spreadsheets for clients.</p>
+        <div class="btns">
+          <a class="btn btn-primary" href="#projects">View my projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+        <ul class="hero-meta">
+          <li><b>Python</b><span>&amp; Flask</span></li>
+          <li><b>Data</b><span>cleaning &amp; charts</span></li>
+          <li><b>Laguna</b><span>Philippines</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-art reveal" aria-hidden="true">
+        <svg viewBox="0 0 520 440">
+          <!-- grid -->
+          <g stroke="#334155" stroke-width="1" opacity=".45">
+            <path d="M0 60H520M0 140H520M0 220H520M0 300H520M0 380H520M60 0V440M160 0V440M260 0V440M360 0V440M460 0V440"/>
+          </g>
+          <!-- dashboard card -->
+          <g transform="translate(30 50)">
+            <rect width="340" height="260" rx="18" fill="#172033" stroke="#334155"/>
+            <circle cx="24" cy="24" r="5" fill="#334155"/><circle cx="42" cy="24" r="5" fill="#334155"/><circle cx="60" cy="24" r="5" fill="#38BDF8"/>
+            <line x1="0" y1="46" x2="340" y2="46" stroke="#334155"/>
+            <text x="24" y="80" font-family="Inter,sans-serif" font-size="13" fill="#94A3B8">Monthly sales</text>
+            <text x="24" y="110" font-family="Sora,sans-serif" font-weight="700" font-size="26" fill="#F8FAFC">Cleaned &amp; ready</text>
+            <line x1="24" y1="232" x2="316" y2="232" stroke="#334155"/>
+            <g fill="#38BDF8">
+              <rect class="bar" x="36"  y="184" width="28" height="48"  rx="5" opacity=".35" style="--d:.1s"/>
+              <rect class="bar" x="82"  y="164" width="28" height="68"  rx="5" opacity=".45" style="--d:.2s"/>
+              <rect class="bar" x="128" y="174" width="28" height="58"  rx="5" opacity=".55" style="--d:.3s"/>
+              <rect class="bar" x="174" y="148" width="28" height="84"  rx="5" opacity=".7"  style="--d:.4s"/>
+              <rect class="bar" x="220" y="156" width="28" height="76"  rx="5" opacity=".85" style="--d:.5s"/>
+              <rect class="bar" x="266" y="132" width="28" height="100" rx="5"               style="--d:.6s"/>
+            </g>
+          </g>
+          <!-- spreadsheet card -->
+          <g transform="translate(300 240)">
+            <rect width="190" height="140" rx="16" fill="#172033" stroke="#334155"/>
+            <text x="18" y="30" font-family="Inter,sans-serif" font-size="12" fill="#94A3B8">data.csv</text>
+            <g fill="#334155">
+              <rect x="18" y="46" width="46" height="10" rx="3"/><rect x="72" y="46" width="46" height="10" rx="3"/><rect x="126" y="46" width="46" height="10" rx="3"/>
+              <rect x="18" y="66" width="46" height="10" rx="3"/><rect x="72" y="66" width="46" height="10" rx="3"/><rect x="126" y="66" width="46" height="10" rx="3"/>
+              <rect x="18" y="86" width="46" height="10" rx="3"/><rect x="72" y="86" width="46" height="10" rx="3"/>
+            </g>
+            <circle cx="160" cy="112" r="16" fill="#38BDF8"/>
+            <path d="M153 112l5 5 9-10" fill="none" stroke="#0B1120" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <!-- code chip -->
+          <g transform="translate(360 70)">
+            <rect width="130" height="64" rx="14" fill="#172033" stroke="#334155"/>
+            <text x="16" y="28" font-family="Inter,sans-serif" font-size="13" fill="#38BDF8">df.dropna()</text>
+            <text x="16" y="48" font-family="Inter,sans-serif" font-size="12" fill="#94A3B8">0 missing values</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <div class="reveal">
+          <p class="eyebrow">About</p>
+          <h2>A data-minded developer from Laguna</h2>
+          <p>I'm an IT student from San Pedro, Laguna, studying at PUP's College of Computer and Information Sciences. My focus is data analytics: taking raw records like sales logs, survey results and messy spreadsheets, and turning them into something people can actually read and act on.</p>
+          <p>Most of my projects mix two things I enjoy: building web apps with Python and Flask, and making data understandable with charts and dashboards. I've also worked on networking labs in Cisco Packet Tracer and a Chrome extension backed by Firebase.</p>
+          <p>Right now I'm taking on freelance data-cleaning work and building Lectern, my own app for storing lecture notes.</p>
+        </div>
+        <div class="facts reveal">
+          <div><b>School</b><span>Polytechnic University of the Philippines</span></div>
+          <div><b>Program</b><span>BS Information Technology, Data Analytics</span></div>
+          <div><b>Based in</b><span>San Pedro, Laguna, Philippines</span></div>
+          <div><b>Open to</b><span>Freelance data work, internships</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>Tools I work with</h2>
+          <p class="lede">What I use in my coursework, group projects and freelance work.</p>
+        </div>
+        <div class="skill-grid" id="skillGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Things I've built</h2>
+          <p class="lede">Solo and group projects from my time at PUP.</p>
+        </div>
+        <div class="filters" id="filters" role="tablist" aria-label="Filter projects"></div>
+        <div class="project-grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="services">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Services</p>
+          <h2>What I can do for you</h2>
+          <p class="lede">Have a spreadsheet that's a mess? I can help.</p>
+        </div>
+        <div class="service-grid" id="serviceGrid"></div>
+        <div class="center reveal">
+          <a class="btn btn-primary" href="https://www.fiverr.com/janmanuel01" target="_blank" rel="noopener">Hire me on Fiverr</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's work together</h2>
+          <p class="lede">Have a project, a dataset that needs cleaning, or an internship opening? Send me a message.</p>
+          <div class="links">
+            <a href="https://www.fiverr.com/janmanuel01" target="_blank" rel="noopener"><b>Fiverr</b><span>fiverr.com/janmanuel01</span></a>
+            <a href="https://github.com/your-username" target="_blank" rel="noopener"><b>GitHub</b><span>github.com/your-username</span></a>
+            <a href="mailto:you@example.com"><b>Email</b><span>you@example.com</span></a>
+          </div>
+        </div>
+        <form class="form reveal" id="contactForm" novalidate>
+          <label>Name<input id="cName" name="name" required autocomplete="name"></label>
+          <label>Email<input id="cEmail" name="email" type="email" required autocomplete="email"></label>
+          <label>Message<textarea id="cMsg" name="message" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> JugraM. Built with HTML, CSS &amp; JavaScript.</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
